@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import BookList from "./components/BookList";
-import Header from "./components/Header"; // Import Header Component
-import Footer from "./components/Footer"; // Import Footer Component
+import Header from "./components/Header"; 
+import Footer from "./components/Footer"; 
 
 const App = () => {
   const [books, setBooks] = useState([]);
@@ -22,10 +22,9 @@ const App = () => {
 
   return (
     <div>
-      {/* Header Component */}
+
       <Header />
 
-      {/* Main Content */}
       <div className="container mt-4">
         <h1 className="text-center mb-4">Google Books Search</h1>
         <div className="input-group mb-4">
@@ -43,7 +42,6 @@ const App = () => {
         <BookList books={books} />
       </div>
 
-      {/* Footer Component */}
       <Footer />
     </div>
   );
