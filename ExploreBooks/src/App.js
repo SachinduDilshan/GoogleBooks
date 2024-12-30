@@ -16,7 +16,7 @@ const App = () => {
       );
       setBooks(response.data.items || []);
     } catch (error) {
-      console.error("Error fetching books:", error);
+      console.error("Error fetching books:");
     }
   };
 
