@@ -20,7 +20,7 @@ const BookList = ({ books }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                More Details ds
+                See Details
               </a>
             </div>
           </div>

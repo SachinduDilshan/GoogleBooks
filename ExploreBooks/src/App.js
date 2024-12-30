@@ -31,12 +31,12 @@ const App = () => {
           <input
             type="text"
             className="form-control"
-            placeholder="Search for books..."
+            placeholder="Search for your favoirite books..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
           <button className="btn btn-primary" onClick={handleSearch}>
-            Search your favorite books here now...
+            Search
           </button>
         </div>
         <BookList books={books} />
