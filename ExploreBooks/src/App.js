@@ -36,7 +36,7 @@ const App = () => {
             onChange={(e) => setQuery(e.target.value)}
           />
           <button className="btn btn-primary" onClick={handleSearch}>
-            Search
+            Search your favorite books here...
           </button>
         </div>
         <BookList books={books} />
