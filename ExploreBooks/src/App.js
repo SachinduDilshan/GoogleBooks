@@ -26,7 +26,7 @@ const App = () => {
       <Header />
 
       <div className="container mt-4">
-        <h1 className="text-center mb-4">Google Books Search</h1>
+        <h1 className="text-center mb-4">Google Books Searcher</h1>
         <div className="input-group mb-4">
           <input
             type="text"
