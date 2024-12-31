@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-primary text-white text-center py-3">
+    <header className="header">
       <h1>Google Books Search</h1>
     </header>
   );
