@@ -6,14 +6,7 @@ const BookList = ({ books }) => {
     <div className="book-grid">
       {books.map((book) => (
         <div key={book.id} className="book-card">
-          <img
-            src={
-              book.volumeInfo.imageLinks?.thumbnail ||
-              "https://via.placeholder.com/150"
-            }
-            alt={book.volumeInfo.title}
-            className="book-thumbnail"
-          />
+          <img src={book.volumeInfo.imageLinks?.thumbnail} alt={book.volumeInfo.title} className="book-thumbnail"/>
           <h3 className="book-title">{book.volumeInfo.title}</h3>
           <p className="book-author">
             {book.volumeInfo.authors?.join(", ") || "Unknown Author"}
@@ -24,7 +17,7 @@ const BookList = ({ books }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            More Details
+            See Details
           </a>
         </div>
       ))}
