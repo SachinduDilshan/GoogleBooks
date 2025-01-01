@@ -1,11 +1,28 @@
 .book-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
-    justify-items: center; 
+    justify-items: center;
 }
 
+@media (max-width: 1024px) {
+    .book-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 .book-card {
     background-color: #fff;
@@ -17,15 +34,13 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
     max-width: 250px;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
 }
-
 
 .book-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
 
 .book-thumbnail {
     width: 100%;
@@ -35,30 +50,27 @@
     margin-bottom: 15px;
 }
 
-
 .book-title {
-    font-family: 'Merriweather', serif; 
+    font-family: 'Merriweather', serif;
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-
 .book-author {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     color: #555;
     margin-bottom: 15px;
 }
-
 
 .btn-more-details {
     display: inline-block;
     padding: 8px 15px;
     background-color: #0ab5bb;
     color: white;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
     border-radius: 4px;
@@ -67,6 +79,28 @@
 }
 
 .btn-more-details:hover {
-    background-color:#088a8f;
+    background-color: #088a8f;
 }
 
+@media (max-width: 480px) {
+    .book-card {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .book-thumbnail {
+        max-width: 120px;
+    }
+
+    .book-title {
+        font-size: 1rem;
+    }
+
+    .book-author {
+        font-size: 0.9rem;
+    }
+
+    .btn-more-details {
+        font-size: 0.8rem;
+    }
+}
