@@ -12,7 +12,6 @@ A simple web application built with React, CSS, and the Google Books API that al
 ## Technologies Used
 
 - React.js
-- Bootstrap 4
 - Axios (for HTTP requests)
 - Google Books API
 - CSS for custom styling
